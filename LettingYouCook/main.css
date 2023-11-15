@@ -1,0 +1,47 @@
+header{
+    height: 6em;
+    background: gainsboro;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+footer{
+    height: 6em;
+    background: gainsboro;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    font-family: 'Brush Script MT', cursive, sans-serif; 
+} 
+#menu{
+    display: flex;
+    left:-6em;
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+    height: 6em;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+#menulist{
+    position:absolute;
+    left:0;
+    list-style: none;
+   
+
+}
+#menulist>li{
+    border: black 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.3em; /*gi zaoblue i prave pogolemi/pomali polinjata*/
+}
+ul{
+    padding-inline-start: 0;
+}
