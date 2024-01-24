@@ -1,0 +1,23 @@
+<div [ngClass]="klasi()">
+    <div [ngStyle]="stil()">
+    <div class="course-title">
+        {{redenbr+'. ' +kola.brand}}
+    </div>
+    <ng-template #noImg>
+        <p>NEMA SLIKA</p>
+    </ng-template>
+    <img [src]="kola.iconUrl" *ngIf="kola.iconUrl; else noImg">
+    <div>
+        {{kola.model}}
+    </div>
+    <div class="course-description">
+        price: {{kola.price}}
+    </div>
+    <div class="course-category" [ngSwitch]="kola.category">
+        <div class="category" *ngSwitchCase="'coupe'">Coupe</div>
+        <div class="category" *ngSwitchCase="'convertible'">Convertible</div>
+        <div class="category" *ngSwitchDefault>Grand Tourer</div>
+    </div>
+    <button (click)="klik()">Click Here</button>
+</div>
+</div>

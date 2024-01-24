@@ -1,0 +1,5 @@
+<app-car *ngFor="let kla of koli; index as i; first as prvv; last as posleden; odd as par; even as nepar" 
+[class.prv] = "nepar"
+[redenbr]="i+1"
+[kola]="kla"
+(foo)="appKlik($event)"></app-car>

@@ -4,6 +4,12 @@
     <meta charset = "utf-8">
     <title> Pizza shop 
     </title>
+    <script>
+        var button=document.getElementById("deletebt");
+        
+        button.addEventListener("click",deleteRow,false);
+        window.addEventListener("load", deleteRow, false);
+    </script>
  </head>
  <body>
     <table border="1"  width="1000" height="300">
@@ -29,17 +35,20 @@
                 </th>
                 <th>
                     <form>
-                        <div></div>
+                        <div>
                         <input type="radio" name=" " id="rad1"> 
                         <label for ="rad1"> Supreme </label>
                     </div>
-                    <div></div>
+                    <div>
                         <input type="radio" name=" " id="rad2">
                         <label for ="rad2"> Vegeterian </label> 
                     </div>
-                    <div></div>
+                    <div>
                         <input type="radio" name=" " id="rad3">
                         <label for ="rad3"> Hawaian </label> 
+                    </div>
+                    <div>
+                        <input type="button" name="delete" id="deletebt">
                     </div>
                     </form>
                 </th>
